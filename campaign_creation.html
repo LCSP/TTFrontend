@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>TTFrontend</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css-bootstrap.min.css" rel="stylesheet" />
+    <!-- Favicons -->
+
+    <meta name="theme-color" content="#563d7c" />
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="navbar-static-navbar-top.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+      <a class="navbar-brand" href="#">CCFrontend</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href=""
+              >Campaign Creation <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./packets.html">Packets</a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <ul class="navbar-nav mr-auto">
+            <li>
+              <button class="btn btn-outline-success my-2 my-sm-0">
+                Log-Out
+              </button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </nav>
+    <main role="main" class="container">
+      <div
+        class="jumbotron"
+        id="camp_creation_form"
+        style="background-color: #adadad; position: relative; z-index: 3;"
+      >
+        <h1>Campaign Creation</h1>
+        <hr />
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1"
+              >Campaign Name</span
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Campaign Name"
+            aria-label="Campaign Name"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1"
+              >Target Users @</span
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Target Users @"
+            aria-label="Target Users @"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Amount</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Amount"
+            aria-label="Amount"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Per day/hour</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Per day/hour"
+            aria-label="Per day/hour"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+        <div style="text-align: right;">
+          <button type="button" class="btn btn-success" id="btn_continue_cc">
+            Continue
+          </button>
+        </div>
+      </div>
+      <div
+        class="jumbotron"
+        id="camp_creation_succ"
+        style="
+          background-color: #79ff79;
+          display: none;
+          position: relative;
+          z-index: 5;
+        "
+      >
+        <h1 style="text-align: center;">Campaign Saved</h1>
+        <!--<p class="lead">
+          This example is a quick exercise to illustrate how the top-aligned
+          navbar works. As you scroll, this navbar remains in its original
+          position and moves with the rest of the page.
+        </p>
+        <a class="btn btn-lg btn-primary" href="navbar.html" role="button"
+          >View navbar docs &raquo;</a
+        >-->
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js-bootstrap.bundle.min.js"></script>
+    <script>
+      $("#btn_continue_cc").on("click", function () {
+        $("#camp_creation_form").fadeOut(300, function () {
+          $("#camp_creation_succ").fadeIn(300, function () {
+            console.log("done");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

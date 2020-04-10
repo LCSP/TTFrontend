@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>TTFrontend</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css-bootstrap.min.css" rel="stylesheet" />
+    <!-- Favicons -->
+
+    <meta name="theme-color" content="#563d7c" />
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="navbar-static-navbar-top.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+      <a class="navbar-brand" href="#">CCFrontend</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./campaign_creation.html"
+              >Campaign Cration</a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href=""
+              >Packets <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <ul class="navbar-nav mr-auto">
+            <li>
+              <button class="btn btn-outline-success my-2 my-sm-0">
+                Log-Out
+              </button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </nav>
+    <main role="main" class="container">
+      <div class="jumbotron">
+        <div
+          class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center"
+        >
+          <h1 class="display-4">Packets</h1>
+          <p class="lead">
+            Quickly deploy a fast campaign without any configuration, just with
+            your username!
+          </p>
+          <div class="container">
+            <div class="card-deck mb-3 text-center">
+              <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">Small</h4>
+                </div>
+                <div class="card-body">
+                  <svg
+                    class="bi bi-heart-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <svg
+                    class="bi bi-heart"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 01.176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <svg
+                    class="bi bi-heart"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 01.176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <h1 class="card-title pricing-card-title">
+                    $999 <small class="text-muted"></small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>9 amount</li>
+                    <li>9 @</li>
+                    <li>Email Confirmation</li>
+                    <li>Email Status</li>
+                  </ul>
+                  <button
+                    type="button"
+                    class="btn btn-lg btn-block btn-primary"
+                  >
+                    Continue
+                  </button>
+                </div>
+              </div>
+              <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">Medium</h4>
+                </div>
+                <div class="card-body">
+                  <svg
+                    class="bi bi-heart-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <svg
+                    class="bi bi-heart-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <svg
+                    class="bi bi-heart"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 01.176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <h1 class="card-title pricing-card-title">
+                    $999<small class="text-muted"></small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>99 amount</li>
+                    <li>99 @</li>
+                    <li>Email Confirmation</li>
+                    <li>Email Status</li>
+                  </ul>
+                  <button
+                    type="button"
+                    class="btn btn-lg btn-block btn-primary"
+                  >
+                    Continue
+                  </button>
+                </div>
+              </div>
+              <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">Pro</h4>
+                </div>
+                <div class="card-body">
+                  <svg
+                    class="bi bi-heart-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <svg
+                    class="bi bi-heart-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <svg
+                    class="bi bi-heart-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <h1 class="card-title pricing-card-title">
+                    $999<small class="text-muted"></small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>999 amount</li>
+                    <li>999 @</li>
+                    <li>Email Confirmation</li>
+                    <li>Email Status</li>
+                  </ul>
+                  <button
+                    type="button"
+                    class="btn btn-lg btn-block btn-primary"
+                  >
+                    Continue
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js-bootstrap.bundle.min.js"></script>
+  </body>
+</html>
